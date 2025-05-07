@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Declares the document as HTML5 -->
+<html lang="en"> <!-- Sets the document language to English -->
+
+<head> <!-- Head section begins -->
+    <meta charset="UTF-8"> <!-- Character encoding set to UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design setup -->
+    <title>Glassmorphism</title> <!-- Page title displayed on the browser tab -->
+
+    <!-- Link to Remix Icon library for vector icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="menu.css">
+</head> <!-- Head section ends -->
+
+<body> <!-- Body section starts -->
+
+    <!-- Logo / Brand heading at the top -->
+    <h1 class="logo">Guru’s Tech Services</h1> <!-- Main heading acting as a dynamic logo -->
+
+    <div class="container"> <!-- Container wrapping all card elements -->
+
+        <!-- First card starts -->
+        <div class="card-box">
+            <div class="card card1">
+                <div class="circle">
+                    <i class="ri-shield-check-line"></i> <!-- Shield icon for security -->
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cyber Security Solutions</h5> <!-- Card title -->
+                    <p class="card-text">Protect your digital assets from threats with real-time monitoring and proactive defense mechanisms.</p> <!-- Main description -->
+                    <input type="checkbox" id="toggle1" class="card-toggle"> <!-- Hidden toggle input -->
+                    <label for="toggle1" class="card-label btn btn1">Learn More</label> <!-- Toggle label styled as a button -->
+                    <div class="card-more"> <!-- Hidden content revealed by toggle -->
+                        Our cyber security services include penetration testing, threat analysis, and 24/7 incident response to ensure your systems stay secure.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- First card ends -->
+
+        <!-- Second card starts -->
+        <div class="card-box">
+            <div class="card card2">
+                <div class="circle circle1">
+                    <i class="ri-global-line"></i> <!-- Globe icon for networking -->
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Networking & Security</h5> <!-- Card title -->
+                    <p class="card-text">Build resilient networks with optimized performance and advanced security protocols.</p> <!-- Main description -->
+                    <input type="checkbox" id="toggle2" class="card-toggle"> <!-- Hidden toggle input -->
+                    <label for="toggle2" class="card-label btn btn2">Learn More</label> <!-- Toggle label styled as a button -->
+                    <div class="card-more"> <!-- Hidden content revealed by toggle -->
+                        We offer firewall configuration, VPN deployment, and secure cloud networking to support businesses of any scale.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second card ends -->
+
+        <!-- Third card starts -->
+        <div class="card-box">
+            <div class="card card3">
+                <div class="circle circle3">
+                    <i class="ri-macbook-line"></i> <!-- Laptop icon for web applications -->
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Managed Web Application</h5> <!-- Card title -->
+                    <p class="card-text">Ensure your web applications are fast, secure, and always up to date with our managed services.</p> <!-- Main description -->
+                    <input type="checkbox" id="toggle3" class="card-toggle"> <!-- Hidden toggle input -->
+                    <label for="toggle3" class="card-label btn btn3">Learn More</label> <!-- Toggle label styled as a button -->
+                    <div class="card-more"> <!-- Hidden content revealed by toggle -->
+                        From automated updates to performance optimization and security patching, we manage the full lifecycle of your web applications.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Third card ends -->
+
+    </div> <!-- End of main container -->
+
+</body> <!-- Body section ends -->
+
+</html> <!-- HTML document ends -->

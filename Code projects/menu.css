@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap'); /* Importing Exo font */
+
+/* ============================== */
+/* Reset default browser styles  */
+/* ============================== */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Use border-box model for sizing */
+}
+
+/* ============================== */
+/* Body styling                  */
+/* ============================== */
+body {
+    font-family: "Exo", sans-serif; /* Apply Exo font throughout */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    min-height: 100vh; /* Full viewport height */
+    background: #03072a; /* Dark background color */
+    padding: 40px; /* Padding around content */
+    flex-direction: column; /* Stack elements vertically (important for logo + container) */
+}
+
+/* ============================== */
+/* Logo / Brand Title Styling    */
+/* ============================== */
+.logo {
+    font-size: 36px; /* Large font size for emphasis */
+    font-weight: 700; /* Bold text */
+    color:#3333ff; /* White text */
+    background: linear-gradient(90deg, #ff00cc, #3333ff); /* Gradient text */
+    -webkit-background-clip: text; /* Apply gradient to text (Safari/Chrome) */
+    -webkit-text-fill-color: transparent; /* Hide actual fill color */
+    text-align: center; /* Center align */
+    margin-bottom: 40px; /* Space below logo */
+    letter-spacing: 2px; /* Slight spacing between letters */
+    animation: pulse 3s ease-in-out infinite; /* Add dynamic pulse animation */
+}
+
+/* ============================== */
+/* Logo animation definition     */
+/* ============================== */
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Normal size */
+        opacity: 1; /* Full opacity */
+    }
+    50% {
+        transform: scale(1.05); /* Slightly enlarged */
+        opacity: 0.85; /* Slightly faded */
+    }
+    100% {
+        transform: scale(1); /* Back to normal */
+        opacity: 1; /* Full opacity */
+    }
+}
+
+/* ============================== */
+/* Main container styling        */
+/* ============================== */
+.container {
+    display: flex; /* Use flex layout */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    gap: 30px; /* Space between cards */
+    justify-content: center; /* Center content */
+    max-width: 1200px; /* Maximum width */
+    width: 100%; /* Full width on smaller screens */
+}
+
+/* ============================== */
+/* Individual card wrapper       */
+/* ============================== */
+.card-box {
+    flex: 1 1 300px; /* Flexible sizing */
+    max-width: 350px; /* Max width per card */
+}
+
+/* ============================== */
+/* Card styling                  */
+/* ============================== */
+.card {
+    padding: 20px; /* Inner spacing */
+    backdrop-filter: blur(6px); /* Glass blur effect */
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid rgba(255, 255, 255, 0.13); /* Transparent border */
+    color: rgba(255, 255, 255, 0.9); /* Light text */
+    background-color: rgba(255, 255, 255, 0.06); /* Light glass background */
+    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    min-height: 300px; /* Minimum height */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack content */
+    justify-content: space-between; /* Even spacing */
+    text-align: center; /* Centered text */
+}
+
+/* ============================== */
+/* Card title styling            */
+/* ============================== */
+.card-title {
+    font-weight: 700; /* Bold text */
+    margin-bottom: 10px; /* Space below title */
+}
+
+/* ============================== */
+/* Card text (main paragraph)    */
+/* ============================== */
+.card-text {
+    font-weight: 400; /* Regular font weight */
+    font-size: 14px; /* Font size */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* ============================== */
+/* Icon container (circle style) */
+/* ============================== */
+.circle {
+    width: 60px; /* Circle width */
+    height: 60px; /* Circle height */
+    display: flex; /* Flexbox for center icon */
+    align-items: center; /* Vertically center icon */
+    justify-content: center; /* Horizontally center icon */
+    margin: auto; /* Center in card */
+    background: linear-gradient(93deg, #6d00e1, #270c8aeb); /* Default gradient */
+    transform: translateY(-32px); /* Pull circle upward */
+    border-radius: 50%; /* Perfect circle */
+    box-shadow: #2100e2db 0px 28px 71px 8px; /* Glowing shadow */
+}
+
+/* ============================== */
+/* Icon inside the circle        */
+/* ============================== */
+.circle i {
+    font-size: 25px; /* Icon size */
+    font-weight: 700; /* Bold icon */
+}
+
+/* ============================== */
+/* Color variations for circles  */
+/* ============================== */
+.circle1 {
+    background: linear-gradient(93deg, #ffff00, #ff4800); /* Orange-yellow gradient */
+    box-shadow: #e2d600db 0px 28px 71px 8px; /* Corresponding shadow */
+}
+
+.circle3 {
+    background: linear-gradient(93deg, #14ff00, #01995a); /* Green gradient */
+    box-shadow: #1de200db 0px 28px 71px 8px; /* Corresponding shadow */
+}
+
+/* ============================== */
+/* Button styled label           */
+/* ============================== */
+.card-label {
+    outline: none; /* Remove outline */
+    display: inline-block; /* Block-level inline */
+    width: fit-content; /* Fit to content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 10px 20px; /* Padding inside */
+    color: #fff; /* White text */
+    border: 2px solid rgba(255, 255, 255, 0.13); /* Border */
+    border-radius: 50px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* ============================== */
+/* Hover styles per card         */
+/* ============================== */
+.card1 .card-label:hover {
+    border: 0; /* Remove border */
+    background: linear-gradient(93deg, #6d00e1, #270c8aeb); /* Gradient background */
+    box-shadow: #2100e2db 0px 28px 71px 8px; /* Glow effect */
+}
+
+.card2 .card-label:hover {
+    border: 0;
+    background: linear-gradient(93deg, #ffff00, #ff4800);
+    box-shadow: #e2d600db 0px 28px 71px 8px;
+}
+
+.card3 .card-label:hover {
+    border: 0;
+    background: linear-gradient(93deg, #14ff00, #01995a);
+    box-shadow: #1de200db 0px 28px 71px 8px;
+}
+
+/* ============================== */
+/* Checkbox toggle hidden        */
+/* ============================== */
+.card-toggle {
+    display: none; /* Hide checkbox */
+}
+
+/* ============================== */
+/* More text hidden by default   */
+/* ============================== */
+.card-more {
+    max-height: 0; /* Collapse height */
+    overflow: hidden; /* Hide overflow */
+    opacity: 0; /* Make invisible */
+    transition: max-height 0.4s ease, opacity 0.4s ease; /* Smooth reveal */
+}
+
+/* ============================== */
+/* Reveal text when checked      */
+/* ============================== */
+.card-toggle:checked ~ .card-more {
+    max-height: 200px; /* Expand space */
+    opacity: 1; /* Make visible */
+    margin-top: 15px; /* Space above */
+    font-size: 14px; /* Text size */
+    line-height: 1.4; /* Line spacing */
+}
+
+/* ============================== */
+/* Responsive styling            */
+/* ============================== */
+@media screen and (max-width: 768px) {
+    .card-box {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+}

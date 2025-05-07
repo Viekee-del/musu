@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'dark seed', Times, serif;
+}
+
+body{
+    background-image: url(Baby.png) center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    color: rgb(7, 3, 3);
+    height: 100%;
+    margin: 5%;
+}
+
+
+.container{
+    display: flexbox;
+    margin: auto;
+    padding: auto;
+    margin-top: 79px;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(images.jpeg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 370px;
+    border-radius: 5%;
+    box-shadow: rgb(94, 94, 94) 3px 4px 4px 3px;
+}
+h1{
+    position: relative;
+    top: 10px;
+    display: inline;
+}
+
+.time{
+    position: relative;
+    top: 40px;
+    display: block;
+    font-size: 20px;
+}
+
+.venue{
+    display: block;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+    
+}
+span{
+    display: block;
+    padding: 5px;
+}
+
+.foot{
+    display: block;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+
+i{
+        color: #af4062;
+ }
+
+.ri-flower-fill{
+ padding: 5px;
+}
+.ri-flower-fill:hover{
+color: gold;
+transition: 1s;
+}
+.buttons{
+    top: 90px;
+    position: relative;
+}
+hr{
+    width: 40px;
+    align-items: center;
+    margin: auto;
+    border-color: #fff;
+}
+
+i{
+    color: #fff;
+
+
+}
+button{
+    width: 80px;
+    font-size: 15px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    top: 2px;
+}
+button:hover{
+    background-color: black;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.footer{
+    text-weight: 
+    
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+

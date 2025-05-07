@@ -1,0 +1,42 @@
+/*General styling*/
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  color: #613f3f;
+  text-align: justify;
+}
+
+/* Full-width input fields */
+  input, textarea, button {
+    
+    width: 300px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+    text-align: center;
+    border: 1px; solid #ccc; 
+    background: #362e85;
+  }
+
+  button{
+    background-color: rgb(21, 99, 145);
+    color: #613f3f;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0%;
+    top: 2px;
+    margin: 0%;
+  }
+
+  botton:hover {
+    background-color: black;
+    transform: sclae (1.1)
+    transition: 1s;
+  }
+
+  btn {
+  top: 90%;
+  position: relative;
+  }
+
